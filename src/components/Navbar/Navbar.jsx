@@ -5,41 +5,43 @@ import { Cart } from '../icons/Cart'
 
 const Navbar = () => {
   return (
-    <nav className='flex items-center py-6 px-16 justify-between gap-40'>
-        <div className='flex items-center gap-6'> 
+    <nav className='flex items-center py-4 px-10 justify-normal gap-20 custom-nav'>
+        <div className='flex items-center gap-4'> 
             {/* Logo */}
-            <a className='text-3xl text-black font-bold gap-8' href='/'>KartMitra</a>
+            <a className='text-4xl text-black font-bold italic gap-8 tracking-wide' href='/'>KartMitra</a>
         </div>
 
-        <div className='flex flex-wrap items-center gap-10 flex-1'>
+        <div className='flex flex-wrap items-center gap-12 px-5 py-2'>
           {/* Navbar Items - Shop, Men, Women, Kids  */}
-          <ul className='flex gap-14 text-gray-600'>
-            <li><a href="/" className="hover:text-black">Shop</a></li>
-            <li><a href="/men" className="hover:text-black">Men</a></li>
-            <li><a href="/women" className="hover:text-black">Women</a></li>
-            <li><a href="/kids" className="hover:text-black">Kids</a></li>
+          <ul className='flex gap-4 md:gap-5 lg:gap-5 text-black font-extrabold text-lg'>
+            <li><a href="/" className="px-3 py-1 rounded-md transition duration-200 ease-in-out hover:bg-black hover:text-white">Shop</a></li>
+            <li><a href="/men" className = "px-3 py-1 rounded-md transition duration-200 ease-in-out hover:bg-black hover:text-white">Men</a></li>
+            <li><a href="/women" className="px-3 py-1 rounded-md transition duration-200 ease-in-out hover:bg-black hover:text-white">Women</a></li>
+            <li><a href="/kids" className="px-3 py-1 rounded-md transition duration-200 ease-in-out hover:bg-black hover:text-white">Kids</a></li>
           </ul>
-
         </div>
 
-        <div className='flex justify-center'>
+        <div className='flex items-center justify-between gap-10 ml-auto'>
           {/* Search Bar */}
-          <div className='border rounded flex overflow-hidden'>
-            <button className='flex items-center justify-center px-4 border-l'>
-              <svg className="h-4 w-4 text-grey-dark" fill="currentColor" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M16.32 14.9l5.39 5.4a1 1 0 0 1-1.42 1.4l-5.38-5.38a8 8 0 1 1 1.41-1.41zM10 16a6 6 0 1 0 0-12 6 6 0 0 0 0 12z"/></svg>
-              <input type="text" className="px-4 py-2 outline-none" placeholder="Search"/>
+          
+          <div className='border rounded flex overflow-hidden transition-all duration-300 ease-in-out hover:border-black focus-within:border-black'>
+            <button className='flex items-center justify-around border-1 w-96'>
+              <svg className="h-4 w-4 text-grey-dark ml-2" fill="currentColor" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M16.32 14.9l5.39 5.4a1 1 0 0 1-1.42 1.4l-5.38-5.38a8 8 0 1 1 1.41-1.41zM10 16a6 6 0 1 0 0-12 6 6 0 0 0 0 12z"/></svg>
+              <input type="text" className="px-4 py-2 outline-none w-80 mr-2 " placeholder="Search"/>
             </button>
           </div>
           
-          <div className='flex flex-wrap items-center gap-4'>
+          <div className='flex items-center gap-64'> 
             {/* Action Items - icons */}
 
-            <ul className='flex flex-wrap items-center gap-4'>
-              <li><button href="/"><Wishlist/></button></li>
-              <li><button href="/"><Account/></button></li>
-              <li><a href="/cart-items"></a><Cart/></li>
+            <ul className='flex gap-8'>
+              <li className="flex items-center"><button href="/"><Wishlist/></button></li>
+              <li className="flex items-center"><button href="/"><Account/></button></li>
+              <li className="flex items-center"><a href="/cart-items"><Cart/></a></li>
             </ul>
           </div>
+
+          
 
         </div>
     </nav>

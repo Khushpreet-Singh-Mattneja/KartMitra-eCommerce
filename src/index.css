@@ -2,37 +2,81 @@
 @tailwind components;
 @tailwind utilities;
 
+/* EB Garamond Font - All Variants */
+@font-face {
+  font-family: "Garamond";
+  src: url(assets/fonts/Garmond/EBGaramond-Regular.ttf) format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Garamond";
+  src: url(assets/fonts/Garmond/EBGaramond-Italic.ttf) format("truetype");
+  font-weight: 400;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Garamond";
+  src: url(assets/fonts/Garmond/EBGaramond-Medium.ttf) format("truetype");
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Garamond";
+  src: url(assets/fonts/Garmond/EBGaramond-MediumItalic.ttf) format("truetype");
+  font-weight: 500;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Garamond";
+  src: url(assets/fonts/Garmond/EBGaramond-SemiBold.ttf) format("truetype");
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Garamond";
+  src: url(assets/fonts/Garmond/EBGaramond-SemiBoldItalic.ttf) format("truetype");
+  font-weight: 600;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Garamond";
+  src: url(assets/fonts/Garmond/EBGaramond-Bold.ttf) format("truetype");
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Garamond";
+  src: url(assets/fonts/Garmond/EBGaramond-BoldItalic.ttf) format("truetype");
+  font-weight: 700;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Garamond";
+  src: url(assets/fonts/Garmond/EBGaramond-ExtraBold.ttf) format("truetype");
+  font-weight: 800;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Garamond";
+  src: url(assets/fonts/Garmond/EBGaramond-ExtraBoldItalic.ttf) format("truetype");
+  font-weight: 800;
+  font-style: italic;
+}
+
+/* Apply globally */
 body {
   margin: 0;
-  font-family: "Inter";
+  font-family: "Garamond", serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-}
-
-@font-face {
-  font-family: "Inter";
-  font-style: normal;
-  font-weight: 200;
-  src: url(assets/fonts/Inter-ExtraLight.ttf);
-}
-
-@font-face {
-  font-family: "Inter";
-  font-style: normal;
-  font-weight: 300;
-  src: url(assets/fonts/Inter-Regular.ttf);
-}
-
-@font-face {
-  font-family: "Inter";
-  font-style: normal;
-  font-weight: 400;
-  src: url(assets/fonts/Inter-Medium.ttf);
-}
-
-@font-face {
-  font-family: "Inter";
-  font-style: normal;
-  font-weight: 700;
-  src: url(assets/fonts/Inter-Bold.ttf);
 }
