@@ -1,0 +1,33 @@
+{
+  "files": {
+    "main.css": "/KartMitra-eCommerce/static/css/main.b9120f1a.css",
+    "main.js": "/KartMitra-eCommerce/static/js/main.6a0bb5f3.js",
+    "static/js/453.4566bace.chunk.js": "/KartMitra-eCommerce/static/js/453.4566bace.chunk.js",
+    "static/media/hero-img.png": "/KartMitra-eCommerce/static/media/hero-img.8360ff86fd797b7c321a.png",
+    "static/media/shirts.jpg": "/KartMitra-eCommerce/static/media/shirts.bbc72b9b5ef2fa306808.jpg",
+    "static/media/dresses.jpg": "/KartMitra-eCommerce/static/media/dresses.30688c3b200699c37e0c.jpg",
+    "static/media/EBGaramond-SemiBold.ttf": "/KartMitra-eCommerce/static/media/EBGaramond-SemiBold.43099cd5749a493e5753.ttf",
+    "static/media/EBGaramond-Medium.ttf": "/KartMitra-eCommerce/static/media/EBGaramond-Medium.b59a60e50179a892bd5f.ttf",
+    "static/media/EBGaramond-Bold.ttf": "/KartMitra-eCommerce/static/media/EBGaramond-Bold.93bbd4764628e48b1743.ttf",
+    "static/media/EBGaramond-ExtraBold.ttf": "/KartMitra-eCommerce/static/media/EBGaramond-ExtraBold.2869246f9370493fc2f8.ttf",
+    "static/media/EBGaramond-Regular.ttf": "/KartMitra-eCommerce/static/media/EBGaramond-Regular.73673a6e207e020fcee2.ttf",
+    "static/media/jeans.jpg": "/KartMitra-eCommerce/static/media/jeans.d6596947089b6bd3d21b.jpg",
+    "static/media/EBGaramond-SemiBoldItalic.ttf": "/KartMitra-eCommerce/static/media/EBGaramond-SemiBoldItalic.bd519b35df826dd1726b.ttf",
+    "static/media/EBGaramond-BoldItalic.ttf": "/KartMitra-eCommerce/static/media/EBGaramond-BoldItalic.70179d4f80ecdc28d58e.ttf",
+    "static/media/EBGaramond-MediumItalic.ttf": "/KartMitra-eCommerce/static/media/EBGaramond-MediumItalic.799df4e95325e891972d.ttf",
+    "static/media/EBGaramond-ExtraBoldItalic.ttf": "/KartMitra-eCommerce/static/media/EBGaramond-ExtraBoldItalic.44358fac16cea0d181bd.ttf",
+    "static/media/EBGaramond-Italic.ttf": "/KartMitra-eCommerce/static/media/EBGaramond-Italic.36dfa83171bbf2e66247.ttf",
+    "static/media/tshirts.jpeg": "/KartMitra-eCommerce/static/media/tshirts.d8c44998da8119366aeb.jpeg",
+    "static/media/revicons.eot": "/KartMitra-eCommerce/static/media/revicons.a77de540a38981833f9e.eot",
+    "static/media/revicons.ttf": "/KartMitra-eCommerce/static/media/revicons.57fd05d4ae650374c8de.ttf",
+    "static/media/revicons.woff": "/KartMitra-eCommerce/static/media/revicons.e8746a624ed098489406.woff",
+    "index.html": "/KartMitra-eCommerce/index.html",
+    "main.b9120f1a.css.map": "/KartMitra-eCommerce/static/css/main.b9120f1a.css.map",
+    "main.6a0bb5f3.js.map": "/KartMitra-eCommerce/static/js/main.6a0bb5f3.js.map",
+    "453.4566bace.chunk.js.map": "/KartMitra-eCommerce/static/js/453.4566bace.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.b9120f1a.css",
+    "static/js/main.6a0bb5f3.js"
+  ]
+}
