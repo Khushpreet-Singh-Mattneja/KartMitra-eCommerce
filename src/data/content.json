@@ -1,0 +1,14 @@
+{
+    "categories" : [
+        {
+            "title" : "For Women",
+            "data" : [
+                {
+                    "title" : "Hoodies & Sweatshirts",
+                    "description" : "Shop the latest collection of hoodies",
+                    "image" : "./images/kurites.jpg"
+                }
+            ]
+        }
+    ]
+}
