@@ -4,6 +4,7 @@ import Navbar from './components/Navbar/Navbar';
 import Banner from './components/Banner/Banner';
 import NewArrivals from './components/Sections/NewArrivals';
 import Category from './components/Sections/Categories/Category';
+import Content from './data/content.json';
 
 function App() {
   return (
@@ -11,7 +12,8 @@ function App() {
       <Navbar />
       <Banner />
       <NewArrivals />
-      <Category />
+      {Content?.categories && Content?.categories?.map((item, index) => <Category key={item?.title + index} {...item} />)}
+      {/* <Category title={Content?.categories[0]?.title} data = {Content?.categories[0]?.data}  /> */}
 
       {/* Add other components as needed */}
       {/* <Footer /> */}

@@ -28,7 +28,7 @@ const products = [
 
 const NewArrivals = () => {
   return (
-    <div>
+    <div className='ml-12 mr-12 mt-12 mb-12 rounded-lg'>
         <SectionHeading title={'|  New Arrivals'}/>
         <Carousel
           responsive={responsive}
@@ -43,7 +43,7 @@ const NewArrivals = () => {
           partialVisbile={false}
           itemClass={'react-slider-custom-item'}
           removeArrowOnDeviceType={["tablet", "mobile"]}
-          className='px-8'  
+          className='px-8 py-4'  
         >
           {products && products?.map((item, index) => <Cards key = {item?.title + index} title={item.title} image={item.image} />)}
         </Carousel>

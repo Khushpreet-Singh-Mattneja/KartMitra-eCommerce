@@ -1,12 +1,54 @@
 {
     "categories" : [
         {
-            "title" : "For Women",
+            "title" : "| Categories for Women",
             "data" : [
+
                 {
-                    "title" : "Hoodies & Sweatshirts",
-                    "description" : "Shop the latest collection of hoodies",
-                    "image" : "./images/kurites.jpg"
+                    "title":"Hoodies & Sweetshirt",
+                    "description":"Shop the latest collection!",
+                    "image":"/images/category-women-hoodies.jpg"   
+                },
+                {
+                    "title":"Coats & Parkas",
+                    "description":"Shop the latest collection!",
+                    "image":"/images/category-women-coats.jpg"   
+                },
+                {
+                    "title":"Tees & T-Shirt",
+                    "description":"Shop the latest collection!",
+                    "image":"/images/category-women-tshirts.png"   
+                },
+                {
+                    "title":"Shorts",
+                    "description":"Shop the latest collection!",
+                    "image":"/images/category-women-shorts.jpg"   
+                }
+                
+            ]
+        },
+        {
+            "title":"| Categories For Men",
+            "data":[
+                {
+                    "title":"Shirts",
+                    "description":"Explore Now!",
+                    "image":"./images/category-men-shirts.jpg"   
+                },
+                {
+                    "title":"Jeans",
+                    "description":"Explore Now!",
+                    "image":"./images/category-men-jeans.jpg"   
+                },
+                {
+                    "title":"Hoodies & Sweetshirt",
+                    "description":"Explore Now!",
+                    "image":"./images/category-men-hoodies.png"   
+                },
+                {
+                    "title":"T-Shirts",
+                    "description":"Explore Now!",
+                    "image":"./images/category-men-tshirts.png"   
                 }
             ]
         }
