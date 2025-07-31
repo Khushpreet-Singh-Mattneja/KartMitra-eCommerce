@@ -5,35 +5,38 @@ import Carousel from 'react-multi-carousel'
 import './NewArrivals.css';
 import { responsive } from '../../utils/Section.constants';
 
-import Jeans from '../../assets/images/jeans.jpg'
-import TShirt from '../../assets/images/tshirts.jpeg' 
-import Shirts from '../../assets/images/shirts.jpg'
-import Dresses from '../../assets/images/dresses.jpg'
+import TShirt from '../../assets/images/new_arrivals/tshirts.jpeg';
+import Shirts from '../../assets/images/new_arrivals/shirts.png';
+import Jeans from '../../assets/images/new_arrivals/jeans.jpg';
+import Hoodies from '../../assets/images/new_arrivals/hoodies.jpeg';
+import Jackets from '../../assets/images/new_arrivals/blazers.jpeg';
+import Trousers from '../../assets/images/new_arrivals/joggers.jpeg';
+import CoordSets from '../../assets/images/new_arrivals/coordsets.jpeg';
+import Cargo from '../../assets/images/new_arrivals/cargos.jpg';
+// Import other images as needed
 
 const products = [
-  { image: Jeans, title: 'Jeans' },
-  { image: TShirt, title: 'T-Shirt' },
+  { image: TShirt, title: 'T-Shirts' },
   { image: Shirts, title: 'Shirts' },
-  { image: Dresses, title: 'Dresses' },
   { image: Jeans, title: 'Jeans' },
-  { image: TShirt, title: 'T-Shirt' },
-  { image: Shirts, title: 'Shirts' },
-  { image: Dresses, title: 'Dresses' },
-  { image: Jeans, title: 'Jeans' },
-  { image: TShirt, title: 'T-Shirt' },
-  { image: Shirts, title: 'Shirts' },
-  { image: Dresses, title: 'Dresses' },
-  
+  { image: Hoodies, title: 'Hoodies'},
+  { image: Jackets, title: 'Blazers' },
+  { image: Trousers, title: 'Trousers & Joggers' },
+  { image: CoordSets, title: 'Co-ord Sets' },
+  { image: Cargo, title: 'Cargo' },
+  // Add more products as needed
+  // { image: 'path/to/image3.jpg', title: 'Product 3' },
 ];
+
 
 const NewArrivals = () => {
   return (
-    <div className='ml-12 mr-12 mt-12 mb-12 rounded-lg'>
+    <div className='ml-20 mr-12 mt-12 mb-12 rounded-lg'>
         <SectionHeading title={'|  New Arrivals'}/>
         <Carousel
           responsive={responsive}
           autoPlay={true}
-          autoPlaySpeed={1500}
+          autoPlaySpeed={1800}
           infinite={true} 
           swipeable={true}
           draggable={true}
@@ -42,10 +45,13 @@ const NewArrivals = () => {
           keyBoardControl={true}
           partialVisbile={false}
           itemClass={'react-slider-custom-item'}
-          removeArrowOnDeviceType={["tablet", "mobile"]}
-          className='px-8 py-4'  
+          customTransition="transform 800ms ease-in-out"
+          transitionDuration={800}
+          removeArrowOnDeviceType={["tablet", "mobile","desktop"]}
+          className='px-8 py-4'
+           
         >
-          {products && products?.map((item, index) => <Cards key = {item?.title + index} title={item.title} image={item.image} />)}
+          {products && products?.map((item, index) => <Cards key = {item?.title + index} title={item.title} image={item.image}  />)}
         </Carousel>
 
              

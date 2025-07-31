@@ -5,6 +5,7 @@ import Banner from './components/Banner/Banner';
 import NewArrivals from './components/Sections/NewArrivals';
 import Category from './components/Sections/Categories/Category';
 import Content from './data/content.json';
+import Footer from './components/Footer/Footer';
 
 function App() {
   return (
@@ -13,10 +14,9 @@ function App() {
       <Banner />
       <NewArrivals />
       {Content?.categories && Content?.categories?.map((item, index) => <Category key={item?.title + index} {...item} />)}
-      {/* <Category title={Content?.categories[0]?.title} data = {Content?.categories[0]?.data}  /> */}
+      <Footer content={Content.footer} />
 
       {/* Add other components as needed */}
-      {/* <Footer /> */}
       {/* <Cart /> */}
       {/* <Wishlist /> */}  
       {/* <ProductDetails /> */}
