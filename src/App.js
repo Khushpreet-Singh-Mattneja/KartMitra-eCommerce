@@ -1,19 +1,18 @@
 // import logo from './logo.svg';
 import './App.css';
-import Navbar from './components/Navbar/Navbar';
 import Banner from './components/Banner/Banner';
 import NewArrivals from './components/Sections/NewArrivals';
 import Category from './components/Sections/Categories/Category';
 import Content from './data/content.json';
 import Footer from './components/Footer/Footer';
 
+
 function App() {
   return (
     <div className="App">
-      <Navbar />
       <Banner />
       <NewArrivals />
-      {Content?.categories && Content?.categories?.map((item, index) => <Category key={item?.title + index} {...item} />)}
+      {Content?.sections && Content?.sections?.map((item, index) => <Category key={item?.title + index} {...item} />)}
       <Footer content={Content.footer} />
 
       {/* Add other components as needed */}

@@ -1,7 +1,9 @@
 import React from 'react'
-import { Wishlist } from '../icons/Wishlist'
-import { Account } from '../icons/Account'
-import { Cart } from '../icons/Cart'
+import { Wishlist } from '../icons/WishlistIcon'
+import { Account } from '../icons/AccountIcon'
+import { Cart } from '../icons/CartIcon'
+import { NavLink } from 'react-router-dom'
+import './Navbar.css'
 
 const Navbar = () => {
   return (
@@ -14,10 +16,10 @@ const Navbar = () => {
         <div className='flex flex-wrap items-center gap-12 px-5 py-2'>
           {/* Navbar Items - Shop, Men, Women, Kids  */}
           <ul className='flex gap-4 md:gap-5 lg:gap-5 text-black font-extrabold text-lg'>
-            <li><a href="/" className="px-3 py-1 rounded-md transition duration-200 ease-in-out hover:bg-black hover:text-white">Shop</a></li>
-            <li><a href="/men" className = "px-3 py-1 rounded-md transition duration-200 ease-in-out hover:bg-black hover:text-white">Men</a></li>
-            <li><a href="/women" className="px-3 py-1 rounded-md transition duration-200 ease-in-out hover:bg-black hover:text-white">Women</a></li>
-            <li><a href="/kids" className="px-3 py-1 rounded-md transition duration-200 ease-in-out hover:bg-black hover:text-white">Kids</a></li>
+            <li><NavLink to="/" className={({isActive})=> isActive ? 'active-link':'passive-link'}>Shop</NavLink></li>
+            <li><NavLink to="/men" className={({isActive})=> isActive ? 'active-link':'passive-link'}>Men</NavLink></li>
+            <li><NavLink to="/women" className={({isActive})=> isActive ? 'active-link':'passive-link'}>Women</NavLink></li>
+            <li><NavLink to="/kids" className={({isActive})=> isActive ? 'active-link':'passive-link'}>Kids</NavLink></li>
           </ul>
         </div>
 

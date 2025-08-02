@@ -1,0 +1,7 @@
+.passive-link {
+    @apply px-3 py-1 rounded-md transition duration-200 ease-in-out bg-white text-black hover:bg-black hover:text-white;
+}
+
+.active-link {
+    @apply px-3 py-1 rounded-md transition duration-200 ease-in-out bg-black text-white;
+}
